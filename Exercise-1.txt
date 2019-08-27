@@ -1,0 +1,145 @@
+1.) Newton Second Law
+
+    **ALGORITMA**
+
+    Diketahui:
+    -rumus hukum II newton = ΣF = m x a
+    -massa = 600kg
+    -percepatan benda = 2m/s2
+
+    Ditanya: 
+    -resultan gaya ΣF?
+
+    1.) Simpan 'massa' dengan nilai 600kg
+    2.) Simpan 'percepatan benda' dengan nilai 2m/s2
+    3.) Simpan 'resultan gaya' tanpa diberkan nilai
+    4.) Hitung resultan menggunakan rumus (massa x perceptan cahaya)
+    5.) Masukkan hasil perhitungan ke 'resultan gaya'
+    6.) Hasil perhitungan tampilkan
+
+    **PSEUDOCODE**
+
+    START
+
+      STORE 'massa'
+
+      STORE 'percepatan cahaya'
+
+      STORE 'resultan gaya' with CALCULATE (massa * percepatan cahaya)
+
+      DISPLAY 'resultan gaya'
+
+    END
+
+===================================================================
+
+2.) Tahun Kabisat
+
+    **ALGORTMA**
+
+    Diketahui:
+    tahun yang memiliki tanggal 29 februari maka merupakan tahun kabisat
+    -jika 2019 % 4 == 0 dan 2019 % 100 != 0 memiliki sisa maka tidak kabisat, atau
+    -jika 2019 % 4 == 0 dan 2019 % 100 == 0 dan 2019 % 400 == 0 maka kabisat
+
+    Ditanya:
+    tentukan tahun kabisat atau bukan kabisat
+    
+    1.) Simpan 'tahun' dengan nilai yang diinginkan
+    2.) Jika tahun habis di bagi 4 dan tidak habis di bagi 100, maka masuk ke step 4. Jika tidak, abaikan step 4 dan langsung ke step 3
+    3.) Tampilkan 'Tahun Kabisat'
+    4.) Jika tahun habis di bagi 4 , habis di bagi 100 dan habis di bagi 400, maka masuk ke step 4. Jika tidak, maka abaikan step 4 dan langsung ke step 5
+    5.) Tampilkan 'Bukan Tahun Kabisat'
+    
+    **PSEUDOCODE**
+
+    START
+
+      STORE 'tahun' with any year value
+        IF 'tahun' MOD 4 EQUALS TO 0 AND 'tahun' MOD 100 NOT EQUALS TO 0 THEN
+        DISPLAY 'tahun kabisat'
+    
+      ELSE IF 'tahun' MOD 4 EQUALS TO 0 AND 'tahun' MOD 100 EQUALS TO 0 AND 'tahun' MOD 400 EQUALS TO 0 THEN
+        DISPLAY 'tahun kabisat'
+    
+      ELSE
+        DISPLAY 'bukan tahun kabisat'
+    
+      END IF
+    
+    END
+
+===================================================================
+
+3.) Laundry Day
+
+    **ALGORITMA**
+
+    Diketahui:
+    -banyak pakaian 20
+    -mesin cuci akan dinyalakan jika semua pakaian Foxie masuk ke mesin cuci, maka
+    
+    1.) hitung banyaknya pakaian
+    2.) masukkan baju sebanyak 20 kali, jika tidak memenuhi angka 20 maka mesin tidak menyala
+    3.) nyalakan mesin cuci
+
+    Ditanya:
+    -hitung jumlah pakaian menggunakan perulangan
+
+    **PSEUDOCODE**
+
+    STORE 'jumlahPakaianPadaMesinCuci' with 0
+    STORE 'jumlahPakaian' with 20
+
+    WHILE 'jumlahPakaian' MORE THAN 0
+      IF 'jumlahPakaianPadaMesinCuci' LESS THAN 20
+        ADD 'jumlahPakaianPadaMesinCuci' by 1
+        REDUCE 'jumlahPakaian' by 1
+      
+      END IF
+    
+    END WHILE
+
+    DISPLAY '20 pakaian masuk mesin cuci'
+
+4.) Periksa Kuku
+
+    **ALGORITMA**
+
+    Diketahui:
+    banyak siswa 40
+    -lakukan dengan cara berkeliling
+    -jika ditemukan kuku panjangn guru akan menghukum siswa/siswi
+    -jika tidak guru akan memuji siswa/siswi, maka
+    Ditanya:
+    -problem solving untuk permasalahan
+
+    1.) Simpan nilai 'banyak siswa' dengan angka 40
+    2.) Simpan nilai 'x' dengan 0
+    3.) Simpan nilai 'kuku panjang' dengan nilai true
+    4.) Selama 'x' lebih kecil dari 'banyak siswa' maka
+    5.) Lanjutkan check hingga 40
+    6.) Tampilkan 'guru akan menghukum siswa / siswi tersebut'
+    7.) Tampilkan 'guru akan memuji siswa / siswi tersebut'
+    8.) Tambahkan 'x' dengan value 1, hingga sebanding dengan angka 40 atau batas perulangan, jika nilai masih dibawah 40 lakukan kembali tahap '4'
+    9.) Tampilkan 'siswa/siswi yang dihukum oleh guru' dan 'siswa/siswi yang dipuji oleh guru' 
+
+    **PSEUDOCODE**
+
+    STORE x with 0
+    STORE 'banyakSiswaSiswi' with 40
+    STORE kukuPanjang with true
+
+    WHILE 'x' LESS THAN 'banyakSiswaSiswi'
+      IF 'banyakSiswaSiswi'[x] EQUAL TO 'kukuPanjang' THEN
+        DISPLAY 'guru akan menghukum siswa / siswi tersebut'
+    
+      ELSE 
+        DISPLAY 'guru akan memuji siswa / siswi tersebut'
+    
+      END IF
+      ADD 'x' by 1
+
+    END WHILE
+
+    DISPLAY '40 siswa atau siswi sudah diperiksa oleh guru'
