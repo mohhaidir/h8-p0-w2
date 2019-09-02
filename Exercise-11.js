@@ -8,7 +8,7 @@ Contoh, jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 function balikKata(kata) {
     var temp = ''
 
-    for(var i = 0; i <= kata.length; i++){
+    for(var i = kata.length-1; i >= 0; i--){
         temp += kata[i]
     }
     return temp
